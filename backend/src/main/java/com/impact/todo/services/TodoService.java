@@ -59,7 +59,8 @@ public class TodoService implements TodoServiceI {
     }
 
     @Override
-    public void clearTodos() {
+    public boolean clearTodos() {
         todos.clear();
+        return true;
     }
 }

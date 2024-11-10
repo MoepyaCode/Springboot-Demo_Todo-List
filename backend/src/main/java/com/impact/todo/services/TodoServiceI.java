@@ -19,5 +19,5 @@ public interface TodoServiceI {
 
     Todo markComplete(UUID id);
 
-    void clearTodos();
+    boolean clearTodos();
 }

@@ -51,8 +51,8 @@ public class TodoController {
         return todoService.deleteTodoById(id);
     }
 
-    @PatchMapping("/{id}/complete")
-    public Todo markComplete(@PathVariable UUID id) {
-        return todoService.markComplete(id);
+    @DeleteMapping("/")
+    public boolean deleteAllTodos() {
+        return todoService.clearTodos();
     }
 }
