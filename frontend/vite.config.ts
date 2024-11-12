@@ -15,5 +15,8 @@ export default defineConfig({
       '@app-services': resolve(root, 'services'),
       '@app-services/*': resolve(root, 'services/*'),
     }
+  },
+  server: {
+    port: 5173
   }
 })
